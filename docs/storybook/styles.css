@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans');
+
 :root {
 	--warning-color: #d4483f;
 	--light-grey-color: #eeeeee;
+	--dark-grey-color: #555555;
+	--white-color: #ffffff;
 }
 
 * {
-	font-family: Verdana;
+	font-family: 'Open Sans', sans-serif;
 }
 
 body {	
@@ -20,18 +24,17 @@ section, footer {
 
 header {
 	background-image: linear-gradient(to bottom right, blue, violet);
-	color: #ffffff;
+	color: var(--white-color);;
 	font-size: 2rem;
 	padding: 8rem 4rem 4rem 4rem;
-	
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: bold;
 }
 
 h2 {
 	font-size: 1.2em;
-}
-
-table {
-	border-collapse: collapse;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: bold;
 }
 
 .important {
@@ -44,9 +47,14 @@ table {
 }
 
 .unimportant {
-	color: var(--light-grey-color);
+	color: var(--dark-grey-color);
 }
 
+/* Styling of the table */
+
+table {
+	border-collapse: collapse;
+}
 
 table, th, td {
 	border: 1px solid var(--light-grey-color);
@@ -74,7 +82,36 @@ th, td {
 	}
 }
 
-dfn::after, abbr::after {
-	content: " (i) ";
-	
+/* Styling of the definition and abbreviation tags */
+
+abbr, dfn {
+    position: relative;
+    font-style: normal;
+    font-variant: normal;
+    text-decoration: none;
 }
+
+dfn::after, abbr::after {
+	font-family: "Font Awesome 5 Free";
+  	content: "\f059";
+  	vertical-align: super;
+  	font-style: normal;
+    font-variant: normal;
+    font-size: 0.5em;
+    padding: 0.4em;
+}
+
+abbr:hover::before, dfn:hover::before {
+    position: absolute;
+    top: 1em;
+    left: 0;
+    display: block;
+    padding: 1em;
+    background: var(--dark-grey-color);
+    color: var(--white-color);
+    content: attr(title);
+    border-radius: 0.3em;
+    margin: 0.4em 0 0 0;
+    padding: 0.3em;
+}
+
