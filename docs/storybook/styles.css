@@ -24,19 +24,20 @@ section, footer {
 	padding: 2rem;
 }
 
-header {
-	background-image: linear-gradient(to bottom right, var(--gradient-start), var(--gradient-end));
-	color: var(--white-color);;
-	font-size: 2rem;
-	padding: 8rem 4rem 4rem 4rem;
+header, h2 {
 	font-family: 'Nanum Gothic', sans-serif;
 	font-weight: bold;
 }
 
+header {
+	background-image: linear-gradient(to bottom right, var(--gradient-start), var(--gradient-end));
+	color: var(--white-color);
+	font-size: 2rem;
+	padding: 8rem 4rem 4rem 4rem;
+}
+
 h2 {
 	font-size: 1.2em;
-	font-family: 'Nanum Gothic', sans-serif;
-	font-weight: bold;
 }
 
 .important {
