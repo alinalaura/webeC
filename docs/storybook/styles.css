@@ -5,6 +5,8 @@
 	--light-grey-color: #eeeeee;
 	--dark-grey-color: #555555;
 	--white-color: #ffffff;
+	--gradient-start: #141e30;
+	--gradient-end: #243b55;
 }
 
 * {
@@ -23,7 +25,7 @@ section, footer {
 }
 
 header {
-	background-image: linear-gradient(to bottom right, blue, violet);
+	background-image: linear-gradient(to bottom right, var(--gradient-start), var(--gradient-end));
 	color: var(--white-color);;
 	font-size: 2rem;
 	padding: 8rem 4rem 4rem 4rem;
