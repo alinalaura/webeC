@@ -1,0 +1,82 @@
+
+
+:root {
+	--warning-color: #d4483f;
+	--light-grey-color: #eeeeee;
+}
+
+* {
+	font-family: Verdana;
+}
+
+body {	
+	background-color: var(--light-grey-color);
+	margin: 0;
+}
+
+section, footer {
+	background-color: white;
+	margin: 2rem;
+	padding: 2rem;
+}
+
+header {
+	background-image: linear-gradient(to bottom right, blue, violet);
+	color: #ffffff;
+	font-size: 2rem;
+	padding: 8rem 4rem 4rem 4rem;
+	
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.important {
+	background-color: var(--warning-color);
+	border-radius: 1rem;
+	padding: 0.5rem;
+	color: white;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+}
+
+.unimportant {
+	color: var(--light-grey-color);
+}
+
+
+table, th, td {
+	border: 1px solid var(--light-grey-color);
+}
+
+th {
+	background-color: var(--light-grey-color);
+}
+
+th, td {
+	padding: 0.7rem;
+}
+
+@media only screen and (max-width: 768px) {
+	table, tbody, th, td, tr, tfoot {
+		display: block;
+	}
+
+	thead {
+		display: none;
+	}
+
+	td:nth-of-type(1) {
+		background-color: var(--light-grey-color);
+	}
+}
+
+dfn::after, abbr::after {
+	content: " (i) ";
+	
+}
